@@ -1,0 +1,149 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+ul li a {
+    margin-left: 10px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select, form button {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Logout Section */
+.logout {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.logout a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* General Styles for Smaller Screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    form input, form select, form button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    ul li {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .logout {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* Further Adjustments for Extra Small Screens */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    ul li {
+        font-size: 0.8em;
+    }
+
+    .logout a {
+        font-size: 0.9em;
+    }
+
+    form button {
+        font-size: 1em;
+    }
+}
